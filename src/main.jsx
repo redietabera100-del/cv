@@ -135,8 +135,12 @@ function ResumeEditor({ resume, onChange }) {
   };
 
   return (
-    <details className="editor" open>
-      <summary>Edit this resume</summary>
+    <details className="editor">
+      <summary aria-label="Edit this resume">
+        <svg className="edit-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 20h9" /><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z" /></svg>
+        <svg className="close-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        <span className="visually-hidden"><span className="closed-label">Edit this resume</span><span className="open-label">Close resume editor</span></span>
+      </summary>
       <div className="editor-fields">
         <label>Role or target title
           <input value={resume.role} onChange={(event) => setField('role', event.target.value)} />

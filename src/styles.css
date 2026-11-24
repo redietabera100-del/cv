@@ -40,7 +40,15 @@ body { margin: 0; padding: 28px; }
 .add-tab { flex: 0 0 auto; margin-bottom: 6px; }
 .workspace-content { padding-top: 12px; }
 .editor-fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
-.editor > summary { width: fit-content; color: var(--accent); font-weight: 700; cursor: pointer; }
+.editor > summary { display: flex; width: 42px; height: 42px; margin-left: auto; align-items: center; justify-content: center; border: 1px solid #b8c3d5; border-radius: 7px; color: var(--accent); cursor: pointer; list-style: none; }
+.editor > summary::-webkit-details-marker { display: none; }
+.editor > summary:focus-visible { outline: 3px solid #f0a72f; outline-offset: 2px; }
+.editor > summary:hover { background: #f4f6fa; }
+.edit-icon, .close-icon { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.close-icon, .open-label { display: none; }
+.editor[open] .edit-icon, .editor[open] .closed-label { display: none; }
+.editor[open] .close-icon, .editor[open] .open-label { display: inline; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .editor-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
 .editor-fields label { display: flex; flex-direction: column; gap: 5px; color: #303b4a; font-size: 9.5pt; font-weight: 600; }
 .editor-fields input, .editor-fields textarea { width: 100%; min-height: 40px; padding: 9px 10px; border: 1px solid #b8c3d5; border-radius: 5px; color: var(--ink); background: #fff; font: 10pt/1.4 Arial, Helvetica, sans-serif; }
