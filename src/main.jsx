@@ -110,7 +110,7 @@ function CV({ resume }) {
             </Section>
             <Section title="Certifications & Training">
                 <ul className="details certifications">
-                    <li><a href="https://adha.edu.et/en/credential/ADHA-C-2026-SDFN7T" target="_blank" rel="noreferrer">Digital Health Foundations | Africa Digital Health Academy | 25 November 2026</a> </li>
+                    <li><a href="https://adha.edu.et/en/credential/ADHA-C-2026-SDFN7T" target="_blank" rel="noreferrer">Digital Health Foundations | Africa Digital Health Academy</a> | 25 November 2026 </li>
                     <li>Employability Skills and Job Readiness | October 2023</li>
                     <li>English Language Proficiency | University of Gondar, 2024</li>
                     <li>Africa Girls Can Code Initiative | 29 July – 16 August 2019</li>
